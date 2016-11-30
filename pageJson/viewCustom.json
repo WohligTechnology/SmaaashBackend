@@ -1,0 +1,49 @@
+{
+    "title": "Customized Packages",
+    "hideCreate": true,
+    "desciption": "",
+    "pageType": "view",
+    "fields": [{
+        "name": "Name",
+        "isSort": "",
+        "tableRef": "name"
+    }, {
+        "name": "Email",
+        "isSort": "",
+        "tableRef": "email"
+    }, {
+        "name": "Mobile",
+        "isSort": "",
+        "tableRef": "mobile"
+    }, {
+        "name": "City",
+        "isSort": "",
+        "tableRef": "city.name"
+    }],
+    "action": [{
+        "name": "edit",
+        "icon": "mode_edit",
+        "color": "blue",
+        "action": "redirect",
+        "jsonPage": "editCustom",
+        "fieldsToSend": ["_id"],
+        "callFindOne": "Custom/getOne"
+    }],
+    "button": [{
+        "name": "excelexport",
+        "icon": "print",
+        "color": "blue",
+        "action": "excelexport"
+    }, {
+        "name": "uploadcsv",
+        "icon": "delete",
+        "color": "red",
+        "action": "uploadcsv"
+    }],
+
+    "apiCall": {
+        "url": "custom/findLimited",
+        "params": ""
+    }
+
+}

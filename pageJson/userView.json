@@ -1,0 +1,49 @@
+{
+    "title": "Registered Users",
+    "hideCreate": true,
+    "desciption": "",
+    "pageType": "view",
+    "fields": [{
+        "name": "Name",
+        "isSort": "",
+        "tableRef": "CustomerName"
+    }, {
+        "name": "Email",
+        "isSort": "",
+        "tableRef": "CustomerEmail"
+    }, {
+        "name": "Mobile",
+        "isSort": "",
+        "tableRef": "CustomerMobile"
+    }, {
+        "name": "City",
+        "isSort": "",
+        "tableRef": "city.name"
+    }],
+    "action": [{
+        "name": "edit",
+        "icon": "mode_edit",
+        "color": "blue",
+        "action": "redirect",
+        "jsonPage": "editUser",
+        "fieldsToSend": ["_id"],
+        "callFindOne": "user/getOne"
+    }],
+    "button": [{
+        "name": "excelexport",
+        "icon": "print",
+        "color": "blue",
+        "action": "excelexport"
+    }, {
+        "name": "uploadcsv",
+        "icon": "delete",
+        "color": "red",
+        "action": "uploadcsv"
+    }],
+
+    "apiCall": {
+        "url": "signup/findLimited",
+        "params": ""
+    }
+
+}

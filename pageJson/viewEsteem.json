@@ -1,0 +1,56 @@
+{
+    "title": "Esteem",
+    "desciption": "",
+    "pageType": "view",
+    "fields": [{
+        "name": "Logo",
+        "isSort": "",
+        "tableRef": "image",
+        "type": "image"
+    }, {
+        "name": "Order",
+        "isSort": "",
+        "tableRef": "order"
+    }],
+    "action": [{
+        "name": "edit",
+        "icon": "mode_edit",
+        "color": "blue",
+        "action": "redirect",
+        "jsonPage": "editEsteem",
+        "fieldsToSend": ["_id"],
+        "callFindOne": "esteem/getOne"
+    }, {
+        "name": "delete",
+        "icon": "delete",
+        "color": "red",
+        "action": "apiCallConfirm",
+        "title": "Delete esteem",
+        "content": "Are you sure you want to delete esteem?",
+        "api": "esteem/delete",
+        "fieldsToSend": [{
+            "name": "_id",
+            "value": "_id"
+        }]
+    }],
+    "button": [{
+        "name": "excelexport",
+        "icon": "print",
+        "color": "blue",
+        "action": "excelexport"
+    }, {
+        "name": "uploadcsv",
+        "icon": "delete",
+        "color": "red",
+        "action": "uploadcsv"
+    }],
+
+    "apiCall": {
+        "url": "esteem/findLimited",
+        "params": ""
+    },
+    "apiCallForSearch": {
+        "url": "city/getAll"
+    },
+    "createButtonState": "page({jsonName:'createEsteem'})"
+}

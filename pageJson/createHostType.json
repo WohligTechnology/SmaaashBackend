@@ -1,0 +1,34 @@
+{
+    "title": "Create HostType",
+    "jsonPage": "viewHostType",
+    "desciption": "",
+    "pageType": "create",
+    "fields": [{
+        "name": " Name",
+        "type": "text",
+        "tableRef": "name",
+        "placeholder": "Enter name",
+        "id": "input1",
+        "validation": ["required", "trim", "unique"],
+          "url": ""
+    }, {
+        "name": "Order",
+        "type": "text",
+        "tableRef": "order",
+        "placeholder": "Enter order",
+        "id": "input2",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }],
+    "action": [{
+        "name": "submit",
+        "action": "submitHostType"
+    }, {
+        "name": "cancel",
+        "stateName": "page({jsonName:'viewHostType'})"
+    }],
+
+    "apiCall": {
+        "url": "hosttype/saveData"
+    }
+}

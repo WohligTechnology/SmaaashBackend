@@ -1,0 +1,218 @@
+{
+    "title": "Edit Events and Packages",
+    "jsonPage": "viewExploreSmash",
+    "desciption": "",
+    "pageType": "edit",
+    "urlFields": ["_id"],
+    "fields": [{
+        "name": "City Name",
+        "type": "selectFromTable",
+        "option": "multiple",
+        "tableRef": "city",
+        "model": "city",
+        "placeholder": "Enter name",
+        "id": "input1",
+        "validation": ["required", "trim", "unique"],
+        "url": "city/getAll"
+    }, {
+        "name": "Title",
+        "type": "text",
+        "tableRef": "hometext",
+        "model": "hometext",
+        "placeholder": "Enter text for home slider",
+        "id": "input5",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
+        "name": "Home Page Image",
+        "type": "image",
+        "tableRef": "image",
+        "model": "image",
+        "size": "586 x 351px",
+        "placeholder": "Enter Picture",
+        "id": "input4",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
+        "name": "Order",
+        "type": "text",
+        "tableRef": "order",
+        "model": "order",
+        "placeholder": "Enter order",
+        "id": "input5",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
+        "name": "Status",
+        "type": "select",
+        "tableRef": "status",
+        "model": "status",
+        "placeholder": "Enter Is Home",
+        "id": "input3",
+        "validation": ["required", "trim", "unique"],
+        "url": [{
+            "value": true,
+            "name": "Enable"
+        }, {
+            "value": false,
+            "name": "Disable"
+        }]
+    }, {
+        "name": "Show Buynow Button",
+        "type": "select",
+        "tableRef": "showBuyNow",
+        "model": "showBuyNow",
+        "placeholder": "Enter Is Home",
+        "id": "input3",
+        "validation": ["required", "trim", "unique"],
+        "url": [{
+            "value": true,
+            "name": "Yes"
+        }, {
+            "value": false,
+            "name": "No"
+        }]
+    }, {
+        "name": "Show Home",
+        "type": "select",
+        "tableRef": "isHome",
+        "model": "isHome",
+        "placeholder": "Enter Is Home",
+        "id": "input3",
+        "validation": ["required", "trim", "unique"],
+        "url": [{
+            "value": true,
+            "name": "Yes"
+        }, {
+            "value": false,
+            "name": "No"
+        }]
+    }, {
+        "name": "Select Event Type",
+        "type": "select",
+        "tableRef": "eventType",
+        "model": "eventType",
+        "placeholder": "Enter Event Type",
+        "id": "input3",
+        "validation": ["required", "trim", "unique"],
+        "url": [{
+            "value": "Event",
+            "name": "Event"
+        }, {
+            "value": "Tournament",
+            "name": "Tournament"
+        }, {
+            "value": "Challenges",
+            "name": "Challenges"
+        }]
+    }, {
+        "name": "Inside Page Image",
+        "type": "image",
+        "tableRef": "homeimage",
+        "model": "homeimage",
+        "size": "600 x 400 px",
+        "placeholder": "Enter Picture",
+        "id": "input4",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
+        "name": "Inside Page Top Banner",
+        "type": "image",
+        "tableRef": "banner",
+        "model": "banner",
+        "placeholder": "Enter City Picture",
+        "id": "input4",
+        "validation": ["required", "trim", "unique"],
+        "url": "",
+        "size": "1920 x 1079"
+    }, {
+        "name": "Top Banner Video Url",
+        "type": "text",
+        "tableRef": "video",
+        "model": "video",
+        "placeholder": "Enter video",
+        "id": "input5",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
+        "name": "Top Banner Video Thumbnail",
+        "type": "image",
+        "tableRef": "videoThumbnail",
+        "model": "videoThumbnail",
+        "size": "1920 x 1079px",
+        "placeholder": "Enter video",
+        "id": "input5",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
+        "name": "Description",
+        "type": "tinymce",
+        "tableRef": "description",
+        "model": "description",
+        "placeholder": "Enter description",
+        "id": "input5",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
+        "name": "Prizes",
+        "type": "tinymce",
+        "tableRef": "prize",
+        "model": "prize",
+        "placeholder": "Enter prize",
+        "id": "input5",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
+        "name": "Schedule",
+        "type": "tinymce",
+        "tableRef": "schedule",
+        "model": "schedule",
+        "placeholder": "Enter schedule",
+        "id": "input5",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
+        "name": "Branch Package ID",
+        "type": "text",
+        "tableRef": "BranchPackageID",
+        "model": "BranchPackageID",
+        "placeholder": "Enter BranchPackageID",
+        "id": "input5",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
+        "name": "PDF",
+        "type": "image",
+        "tableRef": "pdf",
+        "model": "pdf",
+        "placeholder": "Enter Picture",
+        "id": "input4",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
+        "name": "Deal Description",
+        "type": "tinymce",
+        "tableRef": "deal",
+        "model": "deal",
+        "placeholder": "Enter deal",
+        "id": "input5",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }],
+    "action": [{
+        "name": "submit",
+        "action": "submitExploreSmash"
+    }, {
+        "name": "cancel",
+        "action": "cancelExploreSmash",
+        "stateName": "page({jsonName:'viewExploreSmash'})"
+    }],
+    "apiCall": {
+        "url": "exploresmash/saveEvents",
+        "params": "_id"
+    },
+    "preApi": {
+        "url": "exploresmash/getOne",
+        "params": "_id"
+    }
+}
