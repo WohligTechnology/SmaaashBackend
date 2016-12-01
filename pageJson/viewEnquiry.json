@@ -36,7 +36,9 @@
         "color": "red",
         "action": "uploadcsv"
     }],
-
+    "apiCallForSearch": {
+        "url": "hosttype/getAll"
+    },
     "apiCall": {
         "url": "enquiry/findLimited",
         "params": ""
