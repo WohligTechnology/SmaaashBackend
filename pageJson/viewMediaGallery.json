@@ -1,8 +1,12 @@
 {
-    "title": "MediaGallery",
+    "title": "Media Gallery",
     "desciption": "",
     "pageType": "view",
     "fields": [{
+        "name": "Title",
+        "isSort": "",
+        "tableRef": "title"
+    }, {
         "name": "Image",
         "isSort": "",
         "tableRef": "image",
