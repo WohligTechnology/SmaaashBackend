@@ -51,6 +51,15 @@
         "validation": ["required", "trim", "unique"],
         "url": ""
     }, {
+        "name": "External Link",
+        "type": "text",
+        "tableRef": "externalLink",
+        "model": "externalLink",
+        "placeholder": "Enter externalLink",
+        "id": "input5",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
         "name": "Status",
         "type": "select",
         "tableRef": "status",
