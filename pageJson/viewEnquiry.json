@@ -39,6 +39,9 @@
     "apiCallForSearch": {
         "url": "hosttype/getAll"
     },
+    "apiCallForSearch1": {
+        "url": "city/getall"
+    },
     "apiCall": {
         "url": "enquiry/findLimited",
         "params": ""
