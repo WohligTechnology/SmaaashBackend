@@ -56,6 +56,14 @@
         "validation": ["required", "trim", "unique"],
         "url": ""
     }, {
+        "name": "External Link",
+        "type": "text",
+        "tableRef": "link",
+        "placeholder": "Enter link",
+        "id": "input5",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
         "name": "Description",
         "type": "textarea",
         "tableRef": "text",
