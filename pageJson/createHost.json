@@ -74,10 +74,18 @@
         "validation": ["required", "trim", "unique"],
         "url": ""
     }, {
+        "name": "Rate Image",
+        "type": "image",
+        "tableRef": "rateImage",
+        "size": "826 x 501 px",
+        "placeholder": "Enter video",
+        "id": "input5",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
         "name": "Show Home",
         "type": "select",
         "tableRef": "isHome",
-
         "placeholder": "Enter Is Home",
         "id": "input3",
         "validation": ["required", "trim", "unique"],
