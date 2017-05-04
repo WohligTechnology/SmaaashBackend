@@ -139,7 +139,11 @@
         }, {
             "value": 5,
             "name": "Others"
-        }]
+        },{
+            "value": 6,
+            "name": "Simulation"
+        }
+        ]
     }, {
         "name": "Inside Page Top Banner",
         "type": "image",

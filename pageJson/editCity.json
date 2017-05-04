@@ -115,6 +115,25 @@
         "validation": ["required", "trim", "unique"],
         "url": "",
         "model": "pdf"
+    },
+     {
+        "name": "weekdays",
+        "type": "text",
+        "tableRef": "weekdays",
+        "model": "weekdays",
+        "placeholder": "Enter weekdays",
+        "id": "input5",
+        "validation": ["required", "trim"],
+        "url": ""
+    }, {
+        "name": "weekend",
+        "type": "text",
+        "tableRef": "weekend",
+        "model": "weekend",
+        "placeholder": "Enter weekend",
+        "id": "input6",
+        "validation": ["required", "trim"],
+        "url": ""
     }],
     "action": [{
         "name": "submit",
