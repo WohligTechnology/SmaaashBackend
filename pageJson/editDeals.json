@@ -52,7 +52,7 @@
         "validation": ["required", "trim", "unique"],
         "url": "",
         "size": "1920 x 1079px"
-    }, 
+    },
      {
         "name": "Mobile Image",
         "type": "image",
@@ -156,6 +156,16 @@
         "placeholder": "Enter description",
         "id": "input5",
         "validation": ["required", "trim", "unique"],
+        "url": ""
+    },
+    {
+        "name": "TermAndCondition",
+        "type": "tinymce",
+        "tableRef": "termsAndCondition",
+        "model": "termsAndCondition",
+        "placeholder": "Enter termsAndCondition",
+        "id": "input6",
+        "validation": ["", "trim", ""],
         "url": ""
     }, {
         "name": "Branch Package ID",
