@@ -1,0 +1,42 @@
+{
+    "title": "Create Testimonial",
+    "jsonPage": "viewTestimonial",
+    "desciption": "",
+    "pageType": "create",
+    "fields": [{
+        "name": "Testimonial Name",
+        "type": "text",
+        "tableRef": "name",
+        "placeholder": "Enter name",
+        "id": "name",
+        "validation": ["required", "", ""],
+        "url": ""
+    }, {
+        "name": "Description",
+        "type": "tinymce",
+        "tableRef": "description",
+        "placeholder": "Enter Description",
+        "id": "input5",
+        "validation": ["", "trim", ""],
+        "url": ""
+    }, {
+        "name": "Order",
+        "type": "text",
+        "tableRef": "order",
+        "placeholder": "Enter order",
+        "id": "order",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }],
+    "action": [{
+        "name": "submit",
+        "action": "submitTestimonial"
+    }, {
+        "name": "cancel",
+        "stateName": "page({jsonName:'viewTestimonial '})"
+    }],
+
+    "apiCall": {
+        "url": "Testimonial/save"
+    }
+}

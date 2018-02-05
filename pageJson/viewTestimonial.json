@@ -1,33 +1,36 @@
 {
-    "title": "What's New",
+    "title": "Testimonial",
     "desciption": "",
     "pageType": "view",
     "fields": [{
-        "name": "Title",
+        "name": "Name",
         "isSort": "",
-        "tableRef": "hometext"
+        "tableRef": "name"
     }, {
-        "name": "Image",
+        "name": "Description",
         "isSort": "",
-        "tableRef": "image",
-        "type": "image"
+        "tableRef": "description"
+    }, {
+        "name": "Order",
+        "isSort": "",
+        "tableRef": "order"
     }],
     "action": [{
         "name": "edit",
         "icon": "mode_edit",
         "color": "blue",
         "action": "redirect",
-        "jsonPage": "editWhatsNew",
+        "jsonPage": "editTestimonial",
         "fieldsToSend": ["_id"],
-        "callFindOne": "exploresmash/findOne"
+        "callFindOne": "Testimonial/getOne"
     }, {
         "name": "delete",
         "icon": "delete",
         "color": "red",
         "action": "apiCallConfirm",
-        "title": "Delete Explore Smash",
-        "content": "Are you sure you want to delete explore smash?",
-        "api": "exploresmash/delete",
+        "title": "Delete Slider",
+        "content": "Are you sure you want to delete Testimonial?",
+        "api": "Testimonial/delete",
         "fieldsToSend": [{
             "name": "_id",
             "value": "_id"
@@ -46,8 +49,8 @@
     }],
 
     "apiCall": {
-        "url": "exploresmash/findLimitedWhatsNew",
+        "url": "Testimonial/findLimitedForBackend",
         "params": ""
     },
-    "createButtonState": "page({jsonName:'createWhatsNew'})"
+    "createButtonState": "page({jsonName:'createTestimonial'})"
 }

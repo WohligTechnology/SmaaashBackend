@@ -1,0 +1,51 @@
+{
+    "title": "Edit Testimonial",
+    "jsonPage": "viewTestimonials",
+    "desciption": "",
+    "pageType": "edit",
+    "urlFields": ["_id"],
+    "fields": [{
+        "name": "Testimonial Name",
+        "type": "text",
+        "tableRef": "name",
+        "model": "name",
+        "placeholder": "Enter name",
+        "id": "name",
+        "validation": ["required", "", ""],
+        "url": ""
+    }, {
+        "name": "Description",
+        "type": "tinymce",
+        "tableRef": "description",
+        "model": "description",
+        "placeholder": "Enter Description",
+        "id": "input5",
+        "validation": ["", "trim", ""],
+        "url": ""
+    }, {
+        "name": "Order",
+        "type": "text",
+        "tableRef": "order",
+        "model": "order",
+        "placeholder": "Enter order",
+        "id": "order",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }],
+    "action": [{
+        "name": "submit",
+        "action": "submitTestimonial"
+    }, {
+        "name": "cancel",
+        "action": "cancelTestimonial",
+        "stateName": "page({jsonName:'viewTestimonial'})"
+    }],
+    "apiCall": {
+        "url": "Testimonial/save",
+        "params": "_id"
+    },
+    "preApi": {
+        "url": "Testimonial/getOne",
+        "params": "_id"
+    }
+}
