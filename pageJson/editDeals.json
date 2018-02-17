@@ -189,15 +189,16 @@
             "name": "Times Prime",
             "type": "select",
             "tableRef": "timesPrime",
+            "model": "timesPrime",
             "placeholder": "Enter Times Prime",
-            "id": "timesPrime",
+            "id": "input3",
             "validation": ["required", "trim", ""],
             "url": [{
                 "value": true,
-                "name": "No"
+                "name": "Yes"
             }, {
                 "value": false,
-                "name": "Yes"
+                "name": "No"
             }]
         }
     ],
