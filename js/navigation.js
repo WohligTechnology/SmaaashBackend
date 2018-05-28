@@ -1,4 +1,4 @@
-//var adminurl = "http://146.148.109.185:94/";// url for USA chnaged by Nargis
+// var adminurl = "http://146.148.109.185:94/"; // url for USA chnaged by Nargis
 var adminurl = "http://104.154.79.188:82/"; // url for India changed by Nargis-----to be uncommented
 // var adminurl = "http://localhost:1337/";
 var uploadurl = adminurl + "upload/";
@@ -131,6 +131,11 @@ var navigationservice = angular.module('navigationservice', [])
             name: "Testimonial",
             classis: "active",
             link: "#/page/viewTestimonial",
+            subnav: []
+        }, {
+            name: "Thumbnail Images",
+            classis: "active",
+            link: "#/page/viewThumbnailImages",
             subnav: []
         }];
         return {

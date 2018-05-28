@@ -1,0 +1,59 @@
+{
+    "title": "Thumbnail Images",
+    "desciption": "",
+    "showSearch": true,
+    "addSearch": false,
+    "pageType": "view",
+    "fields": [{
+        "name": "Title",
+        "isSort": "",
+        "tableRef": "title"
+    }, {
+        "name": "Image",
+        "isSort": "",
+        "tableRef": "image",
+        "type": "image"
+    }, {
+        "name": "Order",
+        "isSort": "",
+        "tableRef": "order"
+    }],
+    "action": [{
+        "name": "edit",
+        "icon": "mode_edit",
+        "color": "blue",
+        "action": "redirect",
+        "jsonPage": "editThumbnailImages",
+        "fieldsToSend": ["_id"],
+        "callFindOne": "ThumbnailImages/getOne"
+    }, {
+        "name": "delete",
+        "icon": "delete",
+        "color": "red",
+        "action": "apiCallConfirm",
+        "title": "Delete Explore Smash",
+        "content": "Are you sure you want to delete explore smash?",
+        "api": "ThumbnailImages/delete",
+        "fieldsToSend": [{
+            "name": "_id",
+            "value": "_id"
+        }]
+    }],
+    "button": [{
+        "name": "excelexport",
+        "icon": "print",
+        "color": "blue",
+        "action": "excelexport"
+    }, {
+        "name": "uploadcsv",
+        "icon": "delete",
+        "color": "red",
+        "action": "uploadcsv"
+    }],
+
+    "apiCall": {
+        "url": "ThumbnailImages/findLimitedThumbnailImages",
+        "params": ""
+    },
+    "createButtonState": "page({jsonName:'createThumbnailImages'})"
+}

@@ -581,6 +581,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                     $scope.formData[$scope.json.urlFields[0]] = jsonArr[1];
                 }
             } else {
+                console.log("###########################", $scope.json.editData)
                 $scope.formData = $scope.json.editData;
                 console.log($scope.formData);
             }
