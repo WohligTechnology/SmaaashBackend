@@ -1,58 +1,62 @@
 {
-    "title": "Edit City Content",
+    "title": "Edit City Image",
     "jsonPage": "viewCityImage",
     "desciption": "",
     "pageType": "edit",
     "urlFields": ["_id"],
     "fields": [{
-            "name": "Select City",
-            "type": "selectFromTable",
-            "option": "single",
-            "tableRef": "city",
-            "placeholder": "Enter name",
-            "id": "input1",
-            "validation": ["required", "trim", "unique"],
-            "url": "city/getAll"
-        }, {
-            "name": "Heading",
-            "type": "tinymce",
-            "tableRef": "content1",
-            "placeholder": "Enter Description",
-            "id": "input5",
-            "validation": ["", "trim", ""],
-            "url": ""
-        }, {
-            "name": "Description",
-            "type": "tinymce",
-            "tableRef": "content2",
-            "placeholder": "Enter Description",
-            "id": "input5",
-            "validation": ["", "trim", ""],
-            "url": ""
-        },
-        {
-            "name": "Image",
-            "type": "image",
-            "tableRef": "image",
-            "validation": ["required", "trim", "unique"],
-            "url": "",
-            "size": "800 x 600px"
-        }
-    ],
+        "name": "Select City",
+        "type": "selectFromTable",
+        "option": "single",
+        "tableRef": "city",
+        "model": "city",
+        "placeholder": "Enter name",
+        "id": "input1",
+        "validation": ["required", "trim", "unique"],
+        "url": "city/getAll"
+    }, {
+        "name": "Heading",
+        "type": "tinymce",
+        "tableRef": "content1",
+        "model": "content1",
+        "placeholder": "Enter description",
+        "id": "input5",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
+        "name": "Description",
+        "type": "tinymce",
+        "tableRef": "content2",
+        "model": "content2",
+        "placeholder": "Enter description",
+        "id": "input5",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
+        "name": "Image",
+        "type": "image",
+        "tableRef": "image",
+        "model": "image",
+        "placeholder": "Enter City Picture",
+        "id": "input4",
+        "validation": ["required", "trim", "unique"],
+        "url": "",
+        "size": "1920 x 1079px"
+    }],
     "action": [{
         "name": "submit",
-        "action": "submitRegistrationForm"
+        "action": "submitCityImage"
     }, {
         "name": "cancel",
         "action": "cancelRegistrationForm",
         "stateName": "page({jsonName:'viewCityImage'})"
     }],
     "apiCall": {
-        "url": "viewCityImage/saveRegistration",
+        "url": "CityImage/save",
         "params": "_id"
     },
     "preApi": {
-        "url": "viewCityImage/findOneRegistration",
+        "url": "CityImage/getOne",
         "params": "_id"
     }
 }

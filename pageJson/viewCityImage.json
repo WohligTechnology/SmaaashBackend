@@ -17,7 +17,7 @@
         "icon": "mode_edit",
         "color": "blue",
         "action": "redirect",
-        "jsonPage": "editCity",
+        "jsonPage": "editCityImage",
         "fieldsToSend": ["_id"],
         "callFindOne": "CityImage/getOne"
     }, {
@@ -26,7 +26,7 @@
         "color": "red",
         "action": "apiCallConfirm",
         "title": "Delete City",
-        "content": "Are you sure you want to delete city?",
+        "content": "Are you sure you want to delete City-Image?",
         "api": "CityImage/delete",
         "fieldsToSend": [{
             "name": "_id",
@@ -44,7 +44,6 @@
         "color": "red",
         "action": "uploadcsv"
     }],
-
     "apiCall": {
         "url": "CityImage/findLimited",
         "params": ""
