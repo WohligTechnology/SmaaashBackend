@@ -97,7 +97,6 @@
             "type": "select",
             "tableRef": "status",
             "model": "status",
-
             "placeholder": "Enter Is Home",
             "id": "input3",
             "validation": ["required", "trim", "unique"],
