@@ -19,7 +19,7 @@
         "action": "redirect",
         "jsonPage": "editCity",
         "fieldsToSend": ["_id"],
-        "callFindOne": "city/getOne"
+        "callFindOne": "CityImage/getOne"
     }, {
         "name": "delete",
         "icon": "delete",
@@ -27,7 +27,7 @@
         "action": "apiCallConfirm",
         "title": "Delete City",
         "content": "Are you sure you want to delete city?",
-        "api": "city/delete",
+        "api": "CityImage/delete",
         "fieldsToSend": [{
             "name": "_id",
             "value": "_id"
