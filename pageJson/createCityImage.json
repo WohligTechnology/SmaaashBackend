@@ -1,0 +1,44 @@
+{
+    "title": "Create CityImage",
+    "jsonPage": "viewCityImage",
+    "desciption": "",
+    "pageType": "create",
+    "fields": [{
+            "name": "Select City",
+            "type": "selectFromTable",
+            "option": "single",
+            "tableRef": "city",
+            "placeholder": "Enter name",
+            "id": "input1",
+            "validation": ["required", "trim", "unique"],
+            "url": "city/getAll"
+        }, {
+            "name": "Description",
+            "type": "tinymce",
+            "tableRef": "content1",
+            "placeholder": "Enter Description",
+            "id": "input5",
+            "validation": ["", "trim", ""],
+            "url": ""
+        },
+        {
+            "name": "Image",
+            "type": "image",
+            "tableRef": "image",
+            "validation": ["required", "trim", "unique"],
+            "url": "",
+            "size": "800 x 600px"
+        }
+    ],
+    "action": [{
+        "name": "submit",
+        "action": "submitCityImage"
+    }, {
+        "name": "cancel",
+        "stateName": "page({jsonName:'viewCityImage '})"
+    }],
+
+    "apiCall": {
+        "url": "CityImage/save"
+    }
+}

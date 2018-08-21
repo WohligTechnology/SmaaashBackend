@@ -137,6 +137,11 @@ var navigationservice = angular.module('navigationservice', [])
             classis: "active",
             link: "#/page/viewThumbnailImages",
             subnav: []
+        }, {
+            name: "City Image",
+            classis: "active",
+            link: "#/page/viewCityImage",
+            subnav: []
         }];
         return {
             getnav: function () {
