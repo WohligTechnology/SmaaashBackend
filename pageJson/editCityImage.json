@@ -36,12 +36,12 @@
         "name": "Image",
         "type": "image",
         "tableRef": "image",
-        "model": "image",
+        "size": "685px X 285px",
         "placeholder": "Enter City Picture",
         "id": "input4",
         "validation": ["required", "trim", "unique"],
         "url": "",
-        "size": "1920 x 1079px"
+        "model": "image"
     }],
     "action": [{
         "name": "submit",
