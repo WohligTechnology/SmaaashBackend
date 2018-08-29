@@ -3,14 +3,15 @@
     "desciption": "",
     "pageType": "view",
     "fields": [{
-        "name": "City",
-        "isSort": "",
-        "tableRef": "city.name"
-    }, {
         "name": "Image",
         "isSort": "",
         "tableRef": "image",
         "type": "image"
+    }, {
+        "name": "Status",
+        "isSort": "",
+        "tableRef": "status",
+        "type": "status"
     }],
     "action": [{
         "name": "edit",

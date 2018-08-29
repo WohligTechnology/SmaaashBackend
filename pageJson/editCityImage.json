@@ -47,7 +47,7 @@
         "type": "select",
         "tableRef": "status",
         "model": "status",
-        "placeholder": "Enter Is Home",
+        "placeholder": "Enter Is status",
         "id": "input3",
         "validation": ["required", "trim", "unique"],
         "url": [{
