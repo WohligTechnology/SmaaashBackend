@@ -5,9 +5,9 @@
     "pageType": "edit",
     "urlFields": ["_id"],
     "fields": [{
-        "name": "Select City",
+        "name": "City Name",
         "type": "selectFromTable",
-        "option": "single",
+        "option": "multiple",
         "tableRef": "city",
         "model": "city",
         "placeholder": "Enter name",
@@ -42,6 +42,21 @@
         "validation": ["required", "trim", "unique"],
         "url": "",
         "model": "image"
+    }, {
+        "name": "Status",
+        "type": "select",
+        "tableRef": "status",
+        "model": "status",
+        "placeholder": "Enter Is Home",
+        "id": "input3",
+        "validation": ["required", "trim", "unique"],
+        "url": [{
+            "value": true,
+            "name": "Enable"
+        }, {
+            "value": false,
+            "name": "Disable"
+        }]
     }],
     "action": [{
         "name": "submit",
