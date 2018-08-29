@@ -4,9 +4,9 @@
     "desciption": "",
     "pageType": "create",
     "fields": [{
-            "name": "Select City",
+            "name": "City Name",
             "type": "selectFromTable",
-            "option": "single",
+            "option": "multiple",
             "tableRef": "city",
             "placeholder": "Enter name",
             "id": "input1",
