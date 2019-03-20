@@ -1,11 +1,10 @@
 // var adminurl = "http://146.148.109.185:94/"; // url for USA chnaged by Nargis
-var adminurl = "https://api.smaaashusa.com/"; // url for India changed by Nargis-----to be uncommented
+var adminurl = "https://apiv2.smaaashusa.com/"; // url for India changed by Nargis-----to be uncommented
 // var adminurl = "http://localhost:1337/";
 var uploadurl = adminurl + "upload/";
 var imgpath = uploadurl + "readFile";
 var navigationservice = angular
   .module("navigationservice", [])
-
   .factory("NavigationService", function($http) {
     var navigation = [
       {
