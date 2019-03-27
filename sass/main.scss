@@ -4,7 +4,7 @@
 @import "../bower_components/tinymce-dist/skins/lightgray/content.min.css";
 @import "../bower_components/tinymce-dist/skins/lightgray/skin.min.css";
 body {
-  font-size: 14px!important;
+  font-size: 14px !important;
 }
 
 img.loading {
@@ -34,7 +34,6 @@ ng-md-icon {
 .md-button .md-ripple-container {
   z-index: 60;
 }
-
 
 /* Start writing sass here */
 
@@ -131,10 +130,10 @@ select {
 .pagination-next a {
   position: relative;
   float: left;
-  padding: .5rem .75rem;
+  padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.5;
-  color: #662E8F;
+  color: #662e8f;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -150,7 +149,7 @@ select {
   display: inline-block;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 ////////////////
@@ -172,7 +171,11 @@ select {
   height: 24px;
 }
 
-.chipsdemoBasicUsage .custom-chips md-chip ._md-chip-remove-container button.vegetablechip {
+.chipsdemoBasicUsage
+  .custom-chips
+  md-chip
+  ._md-chip-remove-container
+  button.vegetablechip {
   position: relative;
   height: 24px;
   width: 24px;
@@ -188,7 +191,12 @@ select {
   display: block;
 }
 
-.chipsdemoBasicUsage .custom-chips md-chip ._md-chip-remove-container button.vegetablechip md-icon {
+.chipsdemoBasicUsage
+  .custom-chips
+  md-chip
+  ._md-chip-remove-container
+  button.vegetablechip
+  md-icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -197,8 +205,16 @@ select {
   fill: white;
 }
 
-.chipsdemoBasicUsage .custom-chips md-chip ._md-chip-remove-container button.vegetablechip:hover,
-.chipsdemoBasicUsage .custom-chips md-chip ._md-chip-remove-container button.vegetablechip:focus {
+.chipsdemoBasicUsage
+  .custom-chips
+  md-chip
+  ._md-chip-remove-container
+  button.vegetablechip:hover,
+.chipsdemoBasicUsage
+  .custom-chips
+  md-chip
+  ._md-chip-remove-container
+  button.vegetablechip:focus {
   background: rgba(255, 0, 0, 0.8);
 }
 
@@ -235,7 +251,7 @@ select {
 }
 
 li.pagination-page.ng-scope.active a {
-  background: #662E8F;
+  background: #662e8f;
   color: white;
 }
 
@@ -284,7 +300,7 @@ label {
   color: #333 !important;
 }
 
-input[type=file] {
+input[type="file"] {
   margin-top: 30px;
 }
 
@@ -298,7 +314,7 @@ input[type=file] {
 }
 
 .give-bg {
-  background-color: #662E8F;
+  background-color: #662e8f;
 }
 
 .md-button.md-default-theme.md-primary.md-raised,
@@ -306,11 +322,11 @@ input[type=file] {
 .md-button.md-default-theme.md-primary.md-fab,
 .md-button.md-primary.md-fab {
   color: rgba(255, 255, 255, 0.87);
-  background-color: #662E8F !important;
+  background-color: #662e8f !important;
 }
 
 .purple-edit {
-  fill: #662E8F !important;
+  fill: #662e8f !important;
 }
 
 .min-w {
@@ -369,6 +385,12 @@ input[type=file] {
   width: 200px !important;
 }
 
+.img-holder-big {
+  img {
+    width: 250px;
+    height: auto;
+  }
+}
 
 /*
 Copyright 2016 Google Inc. All Rights Reserved.
